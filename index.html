@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ExploreWorld - Discover Your Next Destination</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        header {
+            background: #008080;
+            color: white;
+            padding: 15px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            height: 90vh;
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 12px 25px;
+            font-size: 18px;
+            background: #ff6600;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .destinations {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .destinations h2 {
+            margin-bottom: 30px;
+            font-size: 32px;
+            color: #008080;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 30%;
+            background: #f4f4f4;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            padding: 15px;
+        }
+
+        .card p {
+            padding: 0 15px 15px;
+        }
+
+        footer {
+            background: #008080;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            .cards {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>ExploreWorld</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Discover Beautiful Places</h1>
+        <p>Your adventure begins here</p>
+        <br>
+        <button>Explore Now</button>
+    </div>
+</section>
+
+<section class="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Paris">
+            <h3>Paris</h3>
+            <p>Experience the city of lights, romance, and iconic landmarks.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1549887534-3e91760cbb34" alt="Bali">
+            <h3>Bali</h3>
+            <p>Relax on beautiful beaches and explore vibrant culture.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1526481280690-7a4f94b9a27d" alt="New York">
+            <h3>New York</h3>
+            <p>Discover the city that never sleeps with endless attractions.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 ExploreWorld | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
